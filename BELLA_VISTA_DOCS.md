@@ -17,7 +17,7 @@ Find the `href=""` attribute on the corresponding button and replace the URL:
 ```html
 <!-- TikTok Example -->
 <a class="button button-tiktok-custom" href="YOUR_TIKTOK_LINK_HERE" target="_blank" rel="noopener" role="button">
-  <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">Follow us on Tik Tok
+  <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">Follow us on TikTok
 </a>
 ```
 
