@@ -2,218 +2,256 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bella Vista Weddings | Reviews & Social</title>
-    <link rel="icon" type="image/png" href="bella_vista_logo.png">
+  <title>Bella Vista Weddings | Reviews & Social</title>
+  <link rel="icon" type="image/png" href="bella_vista_logo.png">
 
-    <meta name="description" content="Thank you for sharing your special moments with us. We'd love to hear about your experience.">
+  <meta name="description"
+    content="Thank you for sharing your special moments with us. We'd love to hear about your experience.">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brands.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-    <style>
-      /* Bella Vista Custom Styles */
-      :root {
-        --champagne-gold: #C9A84C;
-        --obsidian: #0D0D12;
-        --cream: #FAF8F5;
-        --dark-green: #2d5a27;
-        --burgundy: #6A2B36; /* Extracted from the logo flourishes */
-      }
+  <style>
+    /* Bella Vista Custom Styles */
+    :root {
+      --champagne-gold: #C9A84C;
+      --obsidian: #0D0D12;
+      --cream: #FAF8F5;
+      --dark-green: #2d5a27;
+      --burgundy: #6A2B36;
+      /* Extracted from the logo flourishes */
+    }
 
-      body {
-        background-color: var(--cream) !important;
-        font-family: 'Inter', sans-serif !important;
-        color: var(--obsidian) !important;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-      }
+    body {
+      background-color: var(--cream) !important;
+      font-family: 'Inter', sans-serif !important;
+      color: var(--obsidian) !important;
+      overflow-x: hidden;
+      /* Prevent horizontal scrolling */
+    }
 
-      h1, h2, h3 {
-        font-family: 'Cormorant Garamond', serif !important;
-        color: var(--obsidian) !important;
-        font-weight: 600;
-      }
-      
-      h1 {
-        font-size: 2rem !important; /* Scaled down slightly to save space */
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
-        line-height: 1.1;
-      }
+    h1,
+    h2,
+    h3 {
+      font-family: 'Cormorant Garamond', serif !important;
+      color: var(--obsidian) !important;
+      font-weight: 600;
+    }
 
-      /* Logo styles */
-      .avatar--none {
-        border-radius: 0;
-        width: 10rem; /* Adjusted to make room for 5 buttons */
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 0.5rem;
-      }
+    h1 {
+      font-size: 2rem !important;
+      /* Scaled down slightly to save space */
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+      line-height: 1.1;
+    }
 
-      /* Button overrides for luxury feel */
-      .button, button {
-        font-family: 'Cormorant Garamond', serif !important;
-        border-radius: 9999px !important; /* Pill shaped */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08) !important;
-        letter-spacing: 0.05em !important;
-        transition: all 0.2s ease !important;
-        font-size: 1.25rem !important; 
-        border: 1px solid rgba(0,0,0,0.05) !important;
-        
-        /* Mobile responsive widths */
-        width: 100% !important;
-        max-width: 320px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        box-sizing: border-box !important;
-      }
+    /* Logo styles */
+    .avatar--none {
+      border-radius: 0;
+      width: 10rem;
+      /* Adjusted to make room for 5 buttons */
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
 
-      .button:hover, button:hover {
-        transform: scale(1.03) !important;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12) !important;
-      }
+    /* Button overrides for luxury feel */
+    .button,
+    button {
+      font-family: 'Cormorant Garamond', serif !important;
+      border-radius: 9999px !important;
+      /* Pill shaped */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08) !important;
+      letter-spacing: 0.05em !important;
+      transition: all 0.2s ease !important;
+      font-size: 1.25rem !important;
+      border: 1px solid rgba(0, 0, 0, 0.05) !important;
 
-      /* Google Review Button - takes center stage */
-      .button-google-review {
-        --button-background: var(--champagne-gold);
-        --button-text: var(--obsidian);
-        font-weight: 700 !important;
-        transform: scale(1.05); /* Make it naturally slightly bigger */
-        margin-bottom: 2rem !important; /* Extra space below the main CTA */
-        border: none !important;
-      }
-      .button-google-review:hover {
-        transform: scale(1.08) !important;
-        color: var(--button-text) !important;
-      }
+      /* Mobile responsive widths */
+      width: 100% !important;
+      max-width: 320px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      box-sizing: border-box !important;
+    }
 
-      /* Instagram Custom - Back to requested Dark Green */
-      .button-ig-custom {
-        --button-background: var(--dark-green);
-        --button-text: #FFFFFF;
-        border: none !important;
-      }
-      .button-ig-custom:hover {
-        color: #FFFFFF !important;
-      }
+    .button:hover,
+    button:hover {
+      transform: scale(1.03) !important;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12) !important;
+    }
 
-      /* Facebook Custom */
-      .button-facebook-custom {
-        --button-background: #1877F2;
-        --button-text: #FFFFFF;
-        border: none !important;
-      }
-      .button-facebook-custom:hover {
-        color: #FFFFFF !important;
-      }
+    /* Google Review Button - takes center stage */
+    .button-google-review {
+      --button-background: var(--champagne-gold);
+      --button-text: var(--obsidian);
+      font-weight: 700 !important;
+      transform: scale(1.05);
+      /* Make it naturally slightly bigger */
+      margin-bottom: 2rem !important;
+      /* Extra space below the main CTA */
+      border: none !important;
+    }
 
-      /* TikTok Custom */
-      .button-tiktok-custom {
-        --button-background: #000000;
-        --button-text: #FFFFFF;
-        border: none !important;
-      }
-      .button-tiktok-custom:hover {
-        color: #FFFFFF !important;
-      }
+    .button-google-review:hover {
+      transform: scale(1.08) !important;
+      color: var(--button-text) !important;
+    }
 
-      /* Isabella Custom - Her own distinct identity (Burgundy) */
-      .button-isabella {
-        --button-background: var(--burgundy) !important;
-        --button-text: #FFFFFF !important;
-        color: #FFFFFF !important;
-        border: none !important;
-        font-weight: 600 !important;
-      }
-      .button-isabella svg {
-        color: #FFFFFF !important;
-      }
-      .button-isabella:hover {
-        transform: scale(1.03) !important;
-        color: #FFFFFF !important;
-      }
+    /* Instagram Custom - Back to requested Dark Green */
+    .button-ig-custom {
+      --button-background: var(--dark-green);
+      --button-text: #FFFFFF;
+      border: none !important;
+    }
 
-      /* General Layout adjustments */
-      .container {
-        padding-top: 1.5rem !important; /* Reduced top padding */
-        padding-left: 1.25rem !important;
-        padding-right: 1.25rem !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-      }
+    .button-ig-custom:hover {
+      color: #FFFFFF !important;
+    }
 
-      .container p {
-        font-family: 'Cormorant Garamond', serif !important;
-        font-size: 1.15rem !important; /* Better mobile readability without clipping */
-        font-style: italic;
-        color: #4a4a4a;
-        margin-bottom: 1.5rem !important; /* Reduced space below text */
-        line-height: 1.4 !important;
-        padding: 0 0.5rem;
-      }
-      
-      footer {
-        color: #888;
-        font-family: 'Inter', sans-serif !important;
-        font-size: 0.875rem !important;
-        margin-top: 1rem;
-      }
-    </style>
-  </head>
+    /* Facebook Custom */
+    .button-facebook-custom {
+      --button-background: #1877F2;
+      --button-text: #FFFFFF;
+      border: none !important;
+    }
+
+    .button-facebook-custom:hover {
+      color: #FFFFFF !important;
+    }
+
+    /* TikTok Custom */
+    .button-tiktok-custom {
+      --button-background: #000000;
+      --button-text: #FFFFFF;
+      border: none !important;
+    }
+
+    .button-tiktok-custom:hover {
+      color: #FFFFFF !important;
+    }
+
+    /* Isabella Custom - Her own distinct identity (Burgundy) */
+    .button-isabella {
+      --button-background: var(--burgundy) !important;
+      --button-text: #FFFFFF !important;
+      color: #FFFFFF !important;
+      border: none !important;
+      font-weight: 600 !important;
+    }
+
+    .button-isabella svg {
+      color: #FFFFFF !important;
+    }
+
+    .button-isabella:hover {
+      transform: scale(1.03) !important;
+      color: #FFFFFF !important;
+    }
+
+    /* General Layout adjustments */
+    .container {
+      padding-top: 1.5rem !important;
+      /* Reduced top padding */
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .container p {
+      font-family: 'Cormorant Garamond', serif !important;
+      font-size: 1.15rem !important;
+      /* Better mobile readability without clipping */
+      font-style: italic;
+      color: #4a4a4a;
+      margin-bottom: 1.5rem !important;
+      /* Reduced space below text */
+      line-height: 1.4 !important;
+      padding: 0 0.5rem;
+    }
+
+    footer {
+      color: #888;
+      font-family: 'Inter', sans-serif !important;
+      font-size: 0.875rem !important;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
 
 <body>
 
-    <div class="container">
-        <div class="column">
+  <div class="container">
+    <div class="column">
 
-            <img class="avatar avatar--none" src="bella_vista_logo.png" alt="Bella Vista Weddings Logo">
+      <img class="avatar avatar--none" src="bella_vista_logo.png" alt="Bella Vista Weddings Logo">
 
-            <h1>
-              <div>Bella Vista Weddings</div>
-            </h1>
+      <h1>
+        <div>Bella Vista Weddings</div>
+      </h1>
 
-            <p>Thank you for sharing your special moments with us. We'd love to hear about your experience.</p>
+      <p>Thank you for sharing your special moments with us. We'd love to hear about your experience.</p>
 
-            <div class="button-stack" role="navigation">
+      <div class="button-stack" role="navigation">
 
-              <!-- Google Review -->
-              <a class="button button-google-review" href="https://www.google.com/maps/search/?api=1&query=Bella+Vista+Weddings+Krugersdorp" target="_blank" rel="noopener" role="button">
-                <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                Review us on Google
-              </a>
+        <!-- Google Review -->
+        <a class="button button-google-review"
+          href="https://www.google.com/maps/search/?api=1&query=Bella+Vista+Weddings+Krugersdorp" target="_blank"
+          rel="noopener" role="button">
+          <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+          </svg>
+          Review us on Google
+        </a>
 
-              <!-- Instagram -->
-              <a class="button button-ig-custom" href="https://instagram.com/bellavistaweddings8" target="_blank" rel="noopener" role="button">
-                <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Follow us on Instagram
-              </a>
+        <!-- Instagram -->
+        <a class="button button-ig-custom" href="https://instagram.com/bellavistaweddings8" target="_blank"
+          rel="noopener" role="button">
+          <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Follow us on
+          Instagram
+        </a>
 
-              <!-- Facebook -->
-              <a class="button button-facebook-custom" href="https://www.facebook.com/people/Bella-Vista-Weddings/61559928577989/" target="_blank" rel="noopener" role="button">
-                <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Follow us on Facebook
-              </a>
+        <!-- Facebook -->
+        <a class="button button-facebook-custom"
+          href="https://www.facebook.com/people/Bella-Vista-Weddings/61559928577989/" target="_blank" rel="noopener"
+          role="button">
+          <img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Follow us on Facebook
+        </a>
 
-              <!-- TikTok -->
-              <a class="button button-tiktok-custom" href="https://www.tiktok.com/@bella.vista.weddi?_r=1&amp;_t=ZS-96Blkvxd9Mu" target="_blank" rel="noopener" role="button">
-                <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">Follow us on TikTok
-              </a>
+        <!-- TikTok -->
+        <a class="button button-tiktok-custom"
+          href="https://www.tiktok.com/@bella.vista.weddi?_r=1&amp;_t=ZS-96Blkvxd9Mu" target="_blank" rel="noopener"
+          role="button">
+          <img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">Follow us on TikTok
+        </a>
 
-              <!-- Chat with Isabella -->
-              <a class="button button-isabella" href="https://bv.answorth.com" target="_blank" rel="noopener" role="button">
-                <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                Chat with Isabella
-              </a>
+        <!-- Chat with Isabella -->
+        <a class="button button-isabella" href="https://bv.answorth.com/?chat=open" target="_blank" rel="noopener" role="button">
+          <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          Chat with Isabella
+        </a>
 
-            </div>
+      </div>
 
       <footer>
         &copy; 2026 Bella Vista Weddings
